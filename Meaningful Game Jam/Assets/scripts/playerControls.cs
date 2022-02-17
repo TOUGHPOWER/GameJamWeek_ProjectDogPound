@@ -4,116 +4,81 @@ using UnityEngine;
 
 public class playerControls : MonoBehaviour
 {
-    [SerializeField] float  speed = 1;
-    private Rigidbody2D     body;
-    private Vector3         velocity = Vector2.zero;
-    private float timer = 0;
-    private int lastButton = 0;
-    private int currentButton = 0;
+    [SerializeField] float          speed = 1;
+    private Rigidbody2D             body;
+    private Vector3                 velocity = Vector2.zero;
+    public bool                     inRange = false;
+    public Dog                     inLeash;
+    public menus                    menu;
+    public Dog                      dogInRange;
+    private SpriteRenderer          gfx;
+
 
     private void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        inLeash = new Dog();
+        inLeash.dogName = "";
+        dogInRange = new Dog();
+        gfx = GetComponent<SpriteRenderer>();
+        
     }
 
     private void FixedUpdate()
     {
-        //InputPlayer();            
+        InputPlayer();            
     }
 
     private void InputPlayer()
     {
 
-        //velocity = Input.GetAxis("Horizontal") * Vector2.right*speed + Input.GetAxis("Vertical") * Vector2.up * speed;
-        //body.velocity = velocity;
-        keydown();
-
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            if (currentButton == 1)
-                currentButton = lastButton;
-            keydown();
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            if (currentButton == 2)
-                currentButton = lastButton; 
-            keydown();
-        }
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            if (currentButton == 3)
-                currentButton = lastButton;
-            keydown();
-        }
-        if (Input.GetKeyUp(KeyCode.S))
-        {
-            if(currentButton == 4)
-                currentButton = lastButton;
-            keydown();
-        }
-        switch (currentButton)
-        {
-            case 1:
-                if ((Input.GetKey(KeyCode.A) && timer >= speed))
-                {
-                    timer = 0;
-                    body.MovePosition(transform.position + Vector3.left);
-                }
-                
-                break;
-            case 2:
-                if ((Input.GetKey(KeyCode.D) && timer >= speed))
-                {
-                    timer = 0;
-                    body.MovePosition(transform.position + Vector3.right);
-                }
-
-                break;
-            case 3:
-                if ((Input.GetKey(KeyCode.W) && timer >= speed))
-                {
-                    timer = 0;
-                    body.MovePosition(transform.position + Vector3.up);
-                }
-                break;
-            case 4:
-                if ((Input.GetKey(KeyCode.S) && timer >= speed))
-                {
-                    timer = 0;
-                    body.MovePosition(transform.position + Vector3.down);
-                }
-                break;
-        }
-    }
-
-    private void keydown()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            lastButton = currentButton;
-            currentButton = 1;
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            lastButton = currentButton;
-            currentButton = 2;
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            lastButton = currentButton;
-            currentButton = 3;
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            lastButton = currentButton;
-            currentButton = 4;
-        }
+        velocity = Input.GetAxis("Horizontal") * Vector2.right*speed + Input.GetAxis("Vertical") * Vector2.up * speed;
+        if (velocity.x > 0.1f)
+            gfx.flipX = false;
+        else if(velocity.x < -0.1f)
+            gfx.flipX = true;
+        body.velocity = velocity;
     }
 
     private void Update()
     {
-        InputPlayer();
-        timer += Time.deltaTime;
+        if (inRange && dogInRange.exist && dogInRange.owned)
+            menu.OpenDogMenu(dogInRange);
+        else if ((!inRange || !dogInRange.exist || !!dogInRange.owned)&& menu.dogMenu.activeSelf)
+            menu.CloseDogMenu();
+        else if(inRange && Input.GetButtonDown("Submit"))
+        {
+            if (!dogInRange.exist)
+            {
+                dogInRange.CopyValues(inLeash);
+                inLeash = new Dog();
+                inLeash.dogName = "";
+                dogInRange.exist = true;
+                dogInRange.owned = true;
+            }  
+            else if(dogInRange.exist && !dogInRange.owned)
+            {
+                if (inLeash.dogName == "")
+                {
+                    
+                    inLeash.CopyValues(dogInRange);
+                    Destroy(dogInRange.gameObject);
+                    
+                }
+                else
+                {
+                    Dog temp = new Dog();
+                    temp.CopyValues(inLeash);
+                    inLeash.CopyValues(dogInRange);
+                    dogInRange.CopyValues(temp);
+                }
+            }
+        }
+    }
+
+    public void SetRangeDog(Dog doginrange)
+    {
+        dogInRange = doginrange;
+        inRange = true;
     }
 }
