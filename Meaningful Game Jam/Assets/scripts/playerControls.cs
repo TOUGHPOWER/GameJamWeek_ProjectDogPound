@@ -8,10 +8,11 @@ public class playerControls : MonoBehaviour
     private Rigidbody2D             body;
     private Vector3                 velocity = Vector2.zero;
     public bool                     inRange = false;
-    public Dog                     inLeash;
+    public Dog                      inLeash;
     public menus                    menu;
     public Dog                      dogInRange;
     private SpriteRenderer          gfx;
+    private Animator                animator;
 
 
     private void Start()
@@ -21,7 +22,9 @@ public class playerControls : MonoBehaviour
         inLeash.dogName = "";
         dogInRange = new Dog();
         gfx = GetComponent<SpriteRenderer>();
-        
+        animator = GetComponent<Animator>();
+
+
     }
 
     private void FixedUpdate()
@@ -38,6 +41,7 @@ public class playerControls : MonoBehaviour
         else if(velocity.x < -0.1f)
             gfx.flipX = true;
         body.velocity = velocity;
+        animator.SetFloat("Speed", Mathf.Abs(velocity.x)+Mathf.Abs(velocity.y));
     }
 
     private void Update()

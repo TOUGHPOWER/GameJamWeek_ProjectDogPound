@@ -74,9 +74,10 @@ public class Dog : MonoBehaviour
     {
         dogName = master.dogNames[UnityEngine.Random.Range(0, master.dogNames.Length)];
         breed = master.breeds[UnityEngine.Random.Range(0, master.breeds.Length)];
-        print(master.breeds.Length);
         exist = true;
         owned = false;
+        if (master.destroyAfterSpawn)
+            Destroy(master.gameObject);
 
         health = UnityEngine.Random.Range(25, 50);
         if (UnityEngine.Random.value > 0.3f)
@@ -117,35 +118,27 @@ public class Dog : MonoBehaviour
         if (animator != null && exist)
             animator.speed = happines / 100;
 
-        if (!owned)
-        {
-            timerForHunger -= 0.25f*Time.deltaTime;
-            timerForPets -= 0.25f*Time.deltaTime;
-            if(sick)
-                timerForSick -= 0.25f*Time.deltaTime;
-        }
-        else
+        if (owned)
         {
             timerForHunger -= Time.deltaTime;
             timerForPets -= Time.deltaTime;
             if (sick)
                 timerForSick -= Time.deltaTime;
-        }
-
-        if (timerForHunger <= 0f)
-        {
-            timerForHunger = timeHunger;
-            ModifyHunger(decreValues);
-        }
-        if (timerForPets <= 0f)
-        {
-            timerForPets = timePets;
-            GivePets(decreValues);
-        }
-        if (timerForSick <= 0f && sick)
-        {
-            timerForSick = timeSick;
-            ModifyHealth(decreValues);
+            if (timerForHunger <= 0f)
+            {
+                timerForHunger = timeHunger;
+                ModifyHunger(decreValues);
+            }
+            if (timerForPets <= 0f)
+            {
+                timerForPets = timePets;
+                GivePets(decreValues);
+            }
+            if (timerForSick <= 0f && sick)
+            {
+                timerForSick = timeSick;
+                ModifyHealth(decreValues);
+            }
         }
     }
 
@@ -245,12 +238,13 @@ public class Dog : MonoBehaviour
 
     private void VerifyCondition()
     {
-        if(happines == 100)
+        if(happines == 100 && owned)
         {
-            menu.messageText.text = dogName + " foi adotado!";
+            menu.messageText.text = dogName + " foi adotado/a!";
             menu.messageMenu.SetActive(true);
             exist = false;
             owned = false;
+            menu.comunity.dogsAdopted++;
         }
         
         if (health <= 5 && hunger <= 5f && exist)
@@ -263,12 +257,10 @@ public class Dog : MonoBehaviour
                 exist = false;
                 owned = false;
             }
-            else
-                Destroy(gameObject);
         }
         else if (health <= 15f && hunger <= 15f && exist && owned && !warncondition)
         {
-            menu.messageText.text = dogName + " esta muito fraco, se a sua condição continuar a baixar, ele será retirado!";
+            menu.messageText.text = dogName + " esta muito fraco/a, se a sua condição continuar a baixar, ele/a será lhe retirado!";
             menu.messageMenu.SetActive(true);
             warncondition = true;
         }

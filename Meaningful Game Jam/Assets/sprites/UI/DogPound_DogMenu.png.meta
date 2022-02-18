@@ -1,28 +1,16 @@
 fileFormatVersion: 2
-guid: 668134ae2e45878439a79db3b783889f
+guid: 02361b66bff76fb489b4176f04c48f93
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3338749442709606003
-    second: Coin_0
+      213: 6564451667588250733
+    second: DogPound_DogMenu_0
   - first:
-      213: 5848064539680731454
-    second: Coin_1
+      213: 6612724979092909078
+    second: DogPound_DogMenu_1
   - first:
-      213: -2652133911391862278
-    second: Coin_2
-  - first:
-      213: 5522397121026081838
-    second: Coin_3
-  - first:
-      213: 4786861022352539597
-    second: Coin_4
-  - first:
-      213: 5728404248119495573
-    second: Coin_5
-  - first:
-      213: -205620266705300115
-    second: Coin_6
+      213: 7670593717719735895
+    second: DogPound_DogMenu_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -136,148 +124,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coin_0
+      name: DogPound_DogMenu_0
       rect:
         serializedVersion: 2
-        x: 104
-        y: 1979
-        width: 766
-        height: 752
+        x: 0
+        y: 100
+        width: 64
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d81b24142116aa1d0800000000000000
-      internalID: -3338749442709606003
+      spriteID: d6c71dff20e991b50800000000000000
+      internalID: 6564451667588250733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin_1
+      name: DogPound_DogMenu_1
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 1979
-        width: 766
-        height: 752
+        x: 64
+        y: 100
+        width: 64
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e317a37e6bf782150800000000000000
-      internalID: 5848064539680731454
+      spriteID: 61c6f20355e15cb50800000000000000
+      internalID: 6612724979092909078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin_2
+      name: DogPound_DogMenu_2
       rect:
         serializedVersion: 2
-        x: 2024
-        y: 1979
-        width: 767
-        height: 752
+        x: 8
+        y: 1
+        width: 48
+        height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af188ba524ab13bd0800000000000000
-      internalID: -2652133911391862278
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coin_3
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 1020
-        width: 766
-        height: 750
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2446633cee73ac40800000000000000
-      internalID: 5522397121026081838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coin_4
-      rect:
-        serializedVersion: 2
-        x: 1065
-        y: 1020
-        width: 766
-        height: 750
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dcf7c7aecb85e6240800000000000000
-      internalID: 4786861022352539597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coin_5
-      rect:
-        serializedVersion: 2
-        x: 2024
-        y: 1020
-        width: 767
-        height: 750
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59b400330516f7f40800000000000000
-      internalID: 5728404248119495573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Coin_6
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 59
-        width: 766
-        height: 752
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d65d864f47d752df0800000000000000
-      internalID: -205620266705300115
+      spriteID: 75e1701885c637a60800000000000000
+      internalID: 7670593717719735895
       vertices: []
       indices: 
       edges: []

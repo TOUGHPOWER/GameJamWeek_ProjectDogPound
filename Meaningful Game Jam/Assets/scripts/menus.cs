@@ -16,6 +16,7 @@ public class menus : MonoBehaviour
     public Slider                   happines;
     public Slider                   hunger;
     public Slider                   health;
+    public Slider                   comunityHappines;
     [Header("Buttons")]
     public Button                   medecine;
     public Button                   deliciosa;
@@ -24,19 +25,22 @@ public class menus : MonoBehaviour
     public Text                     dogName;
     public Text                     messageText;
     public Text                     sellerName;
+    public Text                     sellerPrice;
     [Header("Image")]
     public Image                    sellerProdoct;
 
-    private inventario              playerInventario;
+    public inventario              playerInventario;
     [Header("Variables")]
     public float                    timeMessage = 5;
     private float                   timer;
     [SerializeField] bool           inGame;
     public Dog                      cao;
     private int[]                   foodGains = new int[2] {15, 5};
+    public comunidade               comunity;
 
     public void Load(string scene)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(scene);
     }
 
@@ -80,7 +84,7 @@ public class menus : MonoBehaviour
         if (inGame && dogMenu.activeSelf == true)
             VerifyItems();
 
-        if(messageMenu.activeSelf == true)
+        if(inGame && messageMenu.activeSelf == true)
         {
             timer -= Time.deltaTime;
             if(timer <= 0)

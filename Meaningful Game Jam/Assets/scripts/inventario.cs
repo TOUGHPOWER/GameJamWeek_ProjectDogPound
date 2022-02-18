@@ -10,9 +10,9 @@ public class inventario : MonoBehaviour
     private int             medecine=0;
     private int             delicia=0;
     private int             happyPet = 0;
-    private int             medecinePrice = -20;
-    private int             deliciaPrice = -10;
-    private int             happyPetPrice = -5;
+    public int              medecinePrice = -20;
+    public int              deliciaPrice = -10;
+    public int              happyPetPrice = -5;
     public int              index;
     public Text[]           moneyDisplay;
     public Text[]           medecineDisplay;
@@ -24,7 +24,6 @@ public class inventario : MonoBehaviour
     {
         money = startingMoney;
     }
-
     private void Update()
     {
         foreach(Text texto in moneyDisplay)
@@ -35,8 +34,22 @@ public class inventario : MonoBehaviour
             texto.text = "X" + delicia.ToString();
         foreach (Text texto in happyPetDisplay)
             texto.text = "X" + happyPet.ToString();
+        if (menu.SellMenu.activeSelf == true)
+            menu.sellerPrice.text = IndexPrice()*-1 + "€";
     }
-
+    private int IndexPrice()
+    {
+        switch (index)
+        {
+            case 1:
+                return medecinePrice;
+            case 2:
+                return deliciaPrice;
+            case 3:
+                return happyPetPrice;
+        }
+        return medecinePrice;
+    }
     public bool ModifyValue(int amount, int index)
     {
         switch (index)
@@ -129,6 +142,4 @@ public class inventario : MonoBehaviour
         else
             ModifyValue(1, index);
     }
-
-
 }

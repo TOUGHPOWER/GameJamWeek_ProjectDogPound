@@ -11,6 +11,7 @@ public class dogSpawner : MonoBehaviour
     private GameObject          caoSpawned;
     public string[]             dogNames;
     public string[]             breeds;
+    public bool       destroyAfterSpawn = false;
 
     private void Update()
     {
@@ -35,5 +36,6 @@ public class dogSpawner : MonoBehaviour
         dog.master = this;
 
         caoSpawned = Instantiate(cao, transform.position, transform.rotation);
+
     }
 }

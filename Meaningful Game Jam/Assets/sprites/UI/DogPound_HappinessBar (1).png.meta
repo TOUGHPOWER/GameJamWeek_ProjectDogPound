@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: 2a211db0e932e3f49ad6117ba14ca424
+guid: 75ca44cdd5badf24dad160e8a244467c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -841197875232152415
+    second: DogPound_HappinessBar (1)_0
+  - first:
+      213: -3791698472227320823
+    second: DogPound_HappinessBar (1)_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,7 +119,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DogPound_HappinessBar (1)_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 92
+        width: 60
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a469f44df67354f0800000000000000
+      internalID: -841197875232152415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogPound_HappinessBar (1)_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 28
+        width: 50
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ccf7b245e216bc0800000000000000
+      internalID: -3791698472227320823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

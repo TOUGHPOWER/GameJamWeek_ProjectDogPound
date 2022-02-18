@@ -73,3 +73,4 @@ MonoBehaviour:
   - labrador
   - smally
   - papillon
+  destroyAfterSpawn: 1

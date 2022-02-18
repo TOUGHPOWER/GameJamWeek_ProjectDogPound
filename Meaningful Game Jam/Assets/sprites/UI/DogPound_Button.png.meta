@@ -1,28 +1,37 @@
 fileFormatVersion: 2
-guid: 668134ae2e45878439a79db3b783889f
+guid: 53bf0626992e3ee4da384cc537186592
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3338749442709606003
-    second: Coin_0
+      213: -5399475780441004330
+    second: DogPound_Button_0
   - first:
-      213: 5848064539680731454
-    second: Coin_1
+      213: -3549129845264398929
+    second: DogPound_Button_1
   - first:
-      213: -2652133911391862278
-    second: Coin_2
+      213: -7777690080321020800
+    second: DogPound_Button_2
   - first:
-      213: 5522397121026081838
-    second: Coin_3
+      213: 4081368333260672290
+    second: DogPound_Button_3
   - first:
-      213: 4786861022352539597
-    second: Coin_4
+      213: 4349832098293717260
+    second: DogPound_Button_4
   - first:
-      213: 5728404248119495573
-    second: Coin_5
+      213: -9154527747572333895
+    second: DogPound_Button_5
   - first:
-      213: -205620266705300115
-    second: Coin_6
+      213: -4031526128981059625
+    second: DogPound_Button_6
+  - first:
+      213: -3122653542040211857
+    second: DogPound_Button_7
+  - first:
+      213: -3522378164244725258
+    second: DogPound_Button_8
+  - first:
+      213: -8443008911398933681
+    second: DogPound_Button_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -136,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coin_0
+      name: DogPound_Button_0
       rect:
         serializedVersion: 2
-        x: 104
-        y: 1979
-        width: 766
-        height: 752
+        x: 0
+        y: 128
+        width: 100
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d81b24142116aa1d0800000000000000
-      internalID: -3338749442709606003
+      spriteID: 6d62d75a2653115b0800000000000000
+      internalID: -5399475780441004330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin_1
+      name: DogPound_Button_1
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 1979
-        width: 766
-        height: 752
+        x: 100
+        y: 128
+        width: 100
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e317a37e6bf782150800000000000000
-      internalID: 5848064539680731454
+      spriteID: fa54747b535febec0800000000000000
+      internalID: -3549129845264398929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin_2
+      name: DogPound_Button_2
       rect:
         serializedVersion: 2
-        x: 2024
-        y: 1979
-        width: 767
-        height: 752
+        x: 0
+        y: 96
+        width: 100
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af188ba524ab13bd0800000000000000
-      internalID: -2652133911391862278
+      spriteID: 08cd2657418101490800000000000000
+      internalID: -7777690080321020800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin_3
+      name: DogPound_Button_3
       rect:
         serializedVersion: 2
-        x: 104
-        y: 1020
-        width: 766
-        height: 750
+        x: 100
+        y: 96
+        width: 100
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2446633cee73ac40800000000000000
-      internalID: 5522397121026081838
+      spriteID: 22dc78500eee3a830800000000000000
+      internalID: 4081368333260672290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin_4
+      name: DogPound_Button_4
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 1020
-        width: 766
-        height: 750
+        x: 0
+        y: 64
+        width: 100
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcf7c7aecb85e6240800000000000000
-      internalID: 4786861022352539597
+      spriteID: c09936b3f35bd5c30800000000000000
+      internalID: 4349832098293717260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin_5
+      name: DogPound_Button_5
       rect:
         serializedVersion: 2
-        x: 2024
-        y: 1020
-        width: 767
-        height: 750
+        x: 100
+        y: 64
+        width: 100
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +264,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59b400330516f7f40800000000000000
-      internalID: 5728404248119495573
+      spriteID: 9b28e7f248594f080800000000000000
+      internalID: -9154527747572333895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin_6
+      name: DogPound_Button_6
       rect:
         serializedVersion: 2
-        x: 104
-        y: 59
-        width: 766
-        height: 752
+        x: 0
+        y: 32
+        width: 100
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,8 +285,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d65d864f47d752df0800000000000000
-      internalID: -205620266705300115
+      spriteID: 7d7d06b78542d08c0800000000000000
+      internalID: -4031526128981059625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogPound_Button_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 32
+        width: 100
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ee316e52b1aa4d0800000000000000
+      internalID: -3122653542040211857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogPound_Button_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1c993d8bffd1fc0800000000000000
+      internalID: -3522378164244725258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogPound_Button_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4beb98c02864da80800000000000000
+      internalID: -8443008911398933681
       vertices: []
       indices: 
       edges: []
