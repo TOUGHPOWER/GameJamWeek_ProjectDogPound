@@ -166,111 +166,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: L-Trees-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 130
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0656690e5cd8b9d0800000000000000
-      internalID: -2758212475321690610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 129
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83ba0d783d5b41160800000000000000
-      internalID: 6995416041334549304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 55
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b713e56618c71b590800000000000000
-      internalID: -7660204595970428549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 385
-        y: 129
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a6e7ea78d89b1e40800000000000000
-      internalID: 5628260214871942819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 449
-        y: 129
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79a9552032f59a660800000000000000
-      internalID: 7397548466900408983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: L-Trees-Sheet_5
       rect:
         serializedVersion: 2
@@ -279,7 +174,7 @@ TextureImporter:
         width: 62
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,7 +195,7 @@ TextureImporter:
         width: 62
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,204 +208,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: L-Trees-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 641
-        y: 129
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 624dc61548eda1670800000000000000
-      internalID: 8510359105753109542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 66
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc29db43414bbe9d0800000000000000
-      internalID: -2743901549075000628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 65
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5617df224f4b46bf0800000000000000
-      internalID: -331941511866519195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 58
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96e3646482089c3d0800000000000000
-      internalID: -3185874350921859479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 413
-        y: 53
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74137a23ea59646e0800000000000000
-      internalID: -1853629621209714361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 447
-        y: 49
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fdd9522c5fa78560800000000000000
-      internalID: 7316008929934826993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 513
-        y: 65
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fad40d02e65bc0f80800000000000000
-      internalID: -8138930941963776593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 1
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 363185d19ede33930800000000000000
-      internalID: 4121899669449610083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 705
-        y: 129
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7a126cab2022b9f0800000000000000
-      internalID: -454265240463205764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: L-Trees-Sheet_16
       rect:
         serializedVersion: 2
         x: 1
-        y: 2
+        y: 1
         width: 62
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -518,90 +224,6 @@ TextureImporter:
       bones: []
       spriteID: e4d3c5d3d78f3b1b0800000000000000
       internalID: -5641892691381043890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 1
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0ebfd775541ce5b0800000000000000
-      internalID: -5337869101024952818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_18
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 1
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c660075b23ddf7460800000000000000
-      internalID: 7241749935697167980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_19
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 1
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b55f71042dcb02280800000000000000
-      internalID: -9070042038319712933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_20
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 1
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9fb6bfb6f267d1c30800000000000000
-      internalID: 4331748362647464953
       vertices: []
       indices: 
       edges: []
@@ -615,7 +237,7 @@ TextureImporter:
         width: 62
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -623,69 +245,6 @@ TextureImporter:
       bones: []
       spriteID: d54b8d1e62af90e90800000000000000
       internalID: -7058835896021765027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_22
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 2
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b95aab09dd499e7a0800000000000000
-      internalID: -6347378520465168997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_23
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 65
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39a3cc0f47a45c5b0800000000000000
-      internalID: -5348787116316018029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L-Trees-Sheet_24
-      rect:
-        serializedVersion: 2
-        x: 513
-        y: 1
-        width: 62
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99c1c7499cf248d10800000000000000
-      internalID: 2126877466851810457
       vertices: []
       indices: 
       edges: []

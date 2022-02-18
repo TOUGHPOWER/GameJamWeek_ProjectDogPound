@@ -107,11 +107,11 @@ MonoBehaviour:
   happines: 0
   health: 0
   sick: 0
-  timeSick: 10
+  timeSick: 60
   hunger: 0
-  timeHunger: 10
+  timeHunger: 30
   pets: 0
-  timePets: 10
+  timePets: 30
   menu: {fileID: 0}
   master: {fileID: 0}
   generateAtStart: 1

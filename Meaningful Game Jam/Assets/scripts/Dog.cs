@@ -113,6 +113,8 @@ public class Dog : MonoBehaviour
         VerifyCondition();
         rederer.enabled = exist;
 
+        GetComponent<BoxCollider2D>().enabled = exist;
+
         UpdateSliders();
 
         if (animator != null && exist)
